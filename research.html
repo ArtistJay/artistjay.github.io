@@ -35,18 +35,21 @@
 
   <h2>Publications</h2>
   <ul class="pub-list">
-    <li>Patel, J.A., Maity, A. and Ghaisas, N.S., 2024. A coupled immersed
-    boundary method and wall modelling framework for high-Reynolds number
-    flows over complex terrain. <em>Computers &amp; Fluids</em>, 285,
-    p.106457.</li>
+    <li>Patel, J.A., Maity, A. and Ghaisas, N.S., 2024.
+    <a href="https://doi.org/10.1016/j.compfluid.2024.106457">A coupled
+    immersed boundary method and wall modelling framework for high-Reynolds
+    number flows over complex terrain</a>. <em>Computers &amp; Fluids</em>,
+    285, p.106457.</li>
 
-    <li>Patel, J.A., Maity, A. and Ghaisas, N.S., 2024, June. The Influence of
-    Topographical Variations on Wind Turbine Wake Characteristics Using LES.
-    In <em>Journal of Physics: Conference Series</em> (Vol. 2767, No. 9,
-    p. 092086). IOP Publishing.</li>
+    <li>Patel, J.A., Maity, A. and Ghaisas, N.S., 2024, June.
+    <a href="https://doi.org/10.1088/1742-6596/2767/9/092086">The Influence
+    of Topographical Variations on Wind Turbine Wake Characteristics Using
+    LES</a>. In <em>Journal of Physics: Conference Series</em> (Vol. 2767,
+    No. 9, p. 092086). IOP Publishing.</li>
 
     <li>Ghaisas, N.S., Kethavath, N.N., Patel, J.A. and Mondal, K., 2025.
-    Wake models. In <em>Optimization, Uncertainty and Machine Learning in
+    <a href="https://link.springer.com/book/10.1007/978-981-97-7909-3">Wake
+    models</a>. In <em>Optimization, Uncertainty and Machine Learning in
     Wind Energy Conversion Systems</em> (pp. 61–77). Singapore: Springer
     Nature Singapore.</li>
 
@@ -87,27 +90,34 @@
     <figcaption>Fig. 2 — Velocity profile over a cosine-squared hill.</figcaption>
   </figure>
 
-  <figure>
-    <img src="images/fig3.gif"
-         alt="Simulation of a wind turbine over a hill">
-    <figcaption>Fig. 3 — Simulation of a wind turbine over a hill.</figcaption>
-  </figure>
 
   <h2>Machine Learning for CFD</h2>
   <p>Alongside classical large-eddy simulation, I work on machine-learning
   surrogate models for turbulent flows. The figures below compare
   instantaneous streamwise velocity fields predicted by neural models
   against LES after long rollouts, at mid-height and near-surface planes.</p>
-  <!-- EDIT: reorder ml1–ml8 or tweak the paragraph above as you like -->
+  <h3>Mid-height plane</h3>
+  <p class="muted">Instantaneous streamwise velocity at mid-height after 50
+  rollout steps. The top-left panel is the LES reference; the other panels
+  are predictions from different neural models, with the bottom-right being
+  the physics-incorporated model, which is visually closest to LES.</p>
   <div class="grid-2">
-    <img src="images/ml1.png" alt="ML vs LES velocity field comparison 1">
-    <img src="images/ml2.png" alt="ML vs LES velocity field comparison 2">
-    <img src="images/ml3.png" alt="ML vs LES velocity field comparison 3">
-    <img src="images/ml4.png" alt="ML vs LES velocity field comparison 4">
-    <img src="images/ml5.png" alt="ML vs LES velocity field comparison 5">
-    <img src="images/ml6.png" alt="ML vs LES velocity field comparison 6">
-    <img src="images/ml7.png" alt="ML vs LES velocity field comparison 7">
-    <img src="images/ml8.png" alt="ML vs LES velocity field comparison 8">
+    <img src="images/ml1.png" alt="LES reference, mid-height plane">
+    <img src="images/ml2.png" alt="Neural model prediction, mid-height plane">
+    <img src="images/ml3.png" alt="Neural model prediction, mid-height plane">
+    <img src="images/ml4.png" alt="Physics-incorporated model, mid-height plane">
+  </div>
+
+  <h3>Near-surface plane</h3>
+  <p class="muted">Near-surface streamwise velocity after 50 rollout steps,
+  in the same arrangement — LES at the top-left, neural models in the other
+  panels, and the physics-incorporated model at the bottom-right giving the
+  closest near-surface agreement.</p>
+  <div class="grid-2">
+    <img src="images/ml5.png" alt="LES reference, near-surface plane">
+    <img src="images/ml6.png" alt="Neural model prediction, near-surface plane">
+    <img src="images/ml7.png" alt="Neural model prediction, near-surface plane">
+    <img src="images/ml8.png" alt="Physics-incorporated model, near-surface plane">
   </div>
 
   <h2>Simulation Gallery</h2>

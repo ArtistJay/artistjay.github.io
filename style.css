@@ -6,7 +6,7 @@
    ============================================================ */
 
 :root {
-  --paper: #f2f5f7;
+  --paper: #ffffff;
   --card: #ffffff;
   --ink: #16242e;
   --muted: #5a6b77;
@@ -35,7 +35,7 @@ body {
 
 header {
   border-bottom: 1px solid var(--line);
-  background: rgba(242, 245, 247, 0.82);
+  background: rgba(255, 255, 255, 0.82);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   position: sticky;
@@ -391,10 +391,10 @@ figure video {
 
 /* frosted plate behind the name on the busy home banner */
 .banner.light .banner-title span {
-  background: rgba(242, 245, 247, 0.55);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  padding: 6px 30px;
+  background: rgba(255, 255, 255, 0.42);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  padding: 4px 24px;
   border-radius: 10px;
 }
 
@@ -407,7 +407,7 @@ body.tinted::before {
   z-index: -1;
   background: url("images/banner-home.jpg") center / cover no-repeat;
   filter: blur(55px) saturate(1.05);
-  opacity: 0.16;
+  opacity: 0.12;
   pointer-events: none;
 }
 
@@ -415,7 +415,8 @@ body.tinted::before {
 
 .banner-title.bottom {
   align-items: flex-end;
-  padding-bottom: 30px;
+  padding-bottom: 12px;
+  font-size: clamp(26px, 4.5vw, 42px);
 }
 
 /* ---------- image / video grids (Research page) ---------- */
